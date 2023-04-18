@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+
+	}  
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+    //var numeroPensado = 5;
+    //Esta es la funcion de ramdon tambien es la funcion de redondear, se multiplpico por 10 para que se mostrara numeros randoms hasta el 10
+    var numeroPensado = Math.round(Math.random()*10)
+    var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0-10"));
+
+    if (numeroLanzado==numeroPensado){
+        imprimir("Usted acerto");
+    }
+
+    if (numeroLanzado != numeroPensado){
+        imprimir("Este no es el numero, " + "el numero pensado es: " + numeroPensado);
+    }
+
+
+
+</script>
+</body>
+</html>
